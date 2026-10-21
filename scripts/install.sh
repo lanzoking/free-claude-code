@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-PYTHON_VERSION="3.14.7"
+PYTHON_VERSION="3.14.8"
 MIN_UV_VERSION="0.12.13"
 CLAUDE_INSTALL_URL="https://claude.ai/install.sh"
 CODEX_INSTALL_URL="https://chatgpt.com/codex/install.sh"
@@ -1569,7 +1569,7 @@ install_macos_desktop_app() {
         print_command fcc-desktop --install-macos-app
         return 0
     fi
-    run "$tool_bin/fcc-desktop" --install-macos-app
+    # run "$tool_bin/fcc-desktop" --install-macos-app
 }
 
 show_installer_next_steps() {
